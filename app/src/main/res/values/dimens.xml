@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="nowidth">0dp</dimen>
+    <dimen name="house_text_size">16sp</dimen>
+    <dimen name="house_text_padding">10dp</dimen>
+    <dimen name="house_logo">10dp</dimen>
+    <dimen name="score_padding_bottom">24dp</dimen>
+    <dimen name="score_text_size">56sp</dimen>
+    <dimen name="button_margin_top">50dp</dimen>
+    <dimen name="button_margin_left">24dp</dimen>
+    <dimen name="button_margin_right">24dp</dimen>
+    <dimen name="button_margin_bottom">10dp</dimen>
+    <dimen name="second_button_margin_right">24dp</dimen>
+    <dimen name="second_button_margin_left">25dp</dimen>
+    <dimen name="imageview_height">404dp</dimen>
+    <dimen name="imageview_margin_top">40dp</dimen>
+</resources>

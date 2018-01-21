@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Score Keeper</string>
+    <string name="gryffindor_house">Gryffindor_house</string>
+    <string name="initial_score">0</string>
+    <string name="quaffle">Quaffle</string>
+    <string name="golden_snitch">Golden Snitch</string>
+    <string name="slytherin_house">Slytherin_house</string>
+</resources>
