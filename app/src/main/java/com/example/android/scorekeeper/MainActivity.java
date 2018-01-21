@@ -55,8 +55,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
     /**
      * Reset
      */
@@ -67,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
         displayForGriffindors(griffindorHouse);
         displayForSlytherins(slytherinHouse);
     }
-
 
 
     /**
