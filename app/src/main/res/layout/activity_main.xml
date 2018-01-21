@@ -6,6 +6,7 @@
     android:fillViewport="false"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -25,48 +26,53 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/gryffindor_house"
+                    android:fontFamily="@font/algerian"
                     android:gravity="center_horizontal"
-                    android:textSize="@dimen/house_text_size"
                     android:padding="@dimen/house_text_padding"
-                    android:fontFamily="@font/algerian"/>
+                    android:text="@string/gryffindor_house"
+                    android:textSize="@dimen/house_text_size" />
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/gryffindorteam"
                     android:adjustViewBounds="true"
-                    android:padding="@dimen/house_logo"/>
+                    android:padding="@dimen/house_logo"
+                    android:src="@drawable/gryffindorteam" />
+
                 <TextView
                     android:id="@+id/griffindorhouse"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/initial_score"
-                    android:paddingBottom="@dimen/score_padding_bottom"
                     android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/score_padding_bottom"
+                    android:text="@string/initial_score"
                     android:textColor="@color/text_color_black"
-                    android:textSize="@dimen/score_text_size"/>
+                    android:textSize="@dimen/score_text_size" />
+
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/algerian"
-                    android:background="@color/button_background"
-                    android:textColor="@color/button_text_color"
-                    android:layout_marginTop="@dimen/button_margin_top"
+                    android:layout_marginBottom="@dimen/button_margin_bottom"
                     android:layout_marginLeft="@dimen/button_margin_left"
                     android:layout_marginRight="@dimen/button_margin_right"
-                    android:layout_marginBottom="@dimen/button_margin_bottom"
+                    android:layout_marginTop="@dimen/button_margin_top"
+                    android:background="@color/button_background"
+                    android:fontFamily="@font/algerian"
+                    android:onClick="addOneQuaffleForGriffindors"
                     android:text="@string/quaffle"
-                    android:onClick="addOneQuaffleForGriffindors"/>
+                    android:textColor="@color/button_text_color" />
+
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="@dimen/second_button_margin_right"
                     android:layout_marginLeft="@dimen/second_button_margin_left"
+                    android:layout_marginRight="@dimen/second_button_margin_right"
                     android:background="@color/button_background"
                     android:fontFamily="@font/algerian"
-                    android:text="@string/golden_snitch"
-                    android:onClick="addOneHundredPointsGriffindors"/>
+                    android:onClick="addOneHundredPointsGriffindors"
+                    android:text="@string/golden_snitch" />
             </LinearLayout>
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/imageview_height"
@@ -82,60 +88,65 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/slytherin_house"
+                    android:fontFamily="@font/algerian"
                     android:gravity="center_horizontal"
-                    android:textSize="@dimen/house_text_size"
                     android:padding="@dimen/house_text_padding"
-                    android:fontFamily="@font/algerian"/>
+                    android:text="@string/slytherin_house"
+                    android:textSize="@dimen/house_text_size" />
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/slytherinteam"
                     android:adjustViewBounds="true"
-                    android:padding="@dimen/house_logo"/>
+                    android:padding="@dimen/house_logo"
+                    android:src="@drawable/slytherinteam" />
+
                 <TextView
                     android:id="@+id/slytherinhouse"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/initial_score"
-                    android:paddingBottom="@dimen/score_padding_bottom"
                     android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/score_padding_bottom"
+                    android:text="@string/initial_score"
                     android:textColor="@color/text_color_black"
-                    android:textSize="@dimen/score_text_size"/>
+                    android:textSize="@dimen/score_text_size" />
+
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/algerian"
-                    android:background="@color/button_background"
-                    android:textColor="@color/button_text_color"
-                    android:layout_marginTop="@dimen/button_margin_top"
+                    android:layout_marginBottom="@dimen/button_margin_bottom"
                     android:layout_marginLeft="@dimen/button_margin_left"
                     android:layout_marginRight="@dimen/button_margin_right"
-                    android:layout_marginBottom="@dimen/button_margin_bottom"
+                    android:layout_marginTop="@dimen/button_margin_top"
+                    android:background="@color/button_background"
+                    android:fontFamily="@font/algerian"
+                    android:onClick="addOneQuaffleForSlytherins"
                     android:text="@string/quaffle"
-                    android:onClick="addOneQuaffleForSlytherins"/>
+                    android:textColor="@color/button_text_color" />
+
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="@dimen/second_button_margin_right"
                     android:layout_marginLeft="@dimen/second_button_margin_left"
+                    android:layout_marginRight="@dimen/second_button_margin_right"
                     android:background="@color/button_background"
                     android:fontFamily="@font/algerian"
-                    android:text="@string/golden_snitch"
-                    android:onClick="addOneHundredPointsToSlyttherins"/>
+                    android:onClick="addOneHundredPointsToSlyttherins"
+                    android:text="@string/golden_snitch" />
             </LinearLayout>
         </LinearLayout>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Obliviate Score"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="30dp"
-            android:padding="10dp"
             android:background="#c8b594"
             android:gravity="center"
-            android:onClick="reset"/>
+            android:onClick="reset"
+            android:padding="10dp"
+            android:text="Obliviate Score" />
 
     </RelativeLayout>
 
