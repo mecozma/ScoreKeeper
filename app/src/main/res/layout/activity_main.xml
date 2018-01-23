@@ -3,151 +3,169 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="false"
-    android:orientation="vertical"
+    android:background="@drawable/background"
     tools:context=".MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/background">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/button_margin_bottom"
+                android:background="@color/button_background"
+                android:fontFamily="@font/algerian"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/house_text_padding"
+                android:text="@string/quidditch_world_cup"
+                android:textSize="@dimen/house_text_size" />
+
 
             <LinearLayout
-                android:layout_width="@dimen/nowidth"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/algerian"
-                    android:gravity="center_horizontal"
-                    android:padding="@dimen/house_text_padding"
-                    android:text="@string/gryffindor_house"
-                    android:textSize="@dimen/house_text_size" />
+                <LinearLayout
+                    android:layout_width="@dimen/nowidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/algerian"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/house_text_padding"
+                        android:text="@string/gryffindor_house"
+                        android:textSize="@dimen/house_text_size" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:padding="@dimen/house_logo"
+                        android:src="@drawable/gryffindorteam" />
+
+                    <TextView
+                        android:id="@+id/griffindorhouse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="@dimen/score_padding_bottom"
+                        android:text="@string/initial_score"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/score_text_size" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/button_margin_bottom"
+                        android:layout_marginLeft="@dimen/button_margin_left"
+                        android:layout_marginRight="@dimen/button_margin_right"
+                        android:layout_marginTop="@dimen/button_margin_top"
+                        android:background="@color/button_background"
+                        android:fontFamily="@font/algerian"
+                        android:onClick="addOneQuaffleForGriffindors"
+                        android:text="@string/quaffle"
+                        android:textColor="@color/button_text_color" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/second_button_margin_left"
+                        android:layout_marginRight="@dimen/second_button_margin_right"
+                        android:background="@color/button_background"
+                        android:fontFamily="@font/algerian"
+                        android:onClick="addOneHundredPointsGriffindors"
+                        android:text="@string/golden_snitch" />
+                </LinearLayout>
 
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:padding="@dimen/house_logo"
-                    android:src="@drawable/gryffindorteam" />
+                    android:layout_height="@dimen/imageview_height"
+                    android:layout_marginTop="@dimen/imageview_margin_top"
+                    android:src="@drawable/dividinglinewand" />
 
-                <TextView
-                    android:id="@+id/griffindorhouse"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:paddingBottom="@dimen/score_padding_bottom"
-                    android:text="@string/initial_score"
-                    android:textColor="@color/text_color_black"
-                    android:textSize="@dimen/score_text_size" />
+                <LinearLayout
+                    android:layout_width="@dimen/nowidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/button_margin_bottom"
-                    android:layout_marginLeft="@dimen/button_margin_left"
-                    android:layout_marginRight="@dimen/button_margin_right"
-                    android:layout_marginTop="@dimen/button_margin_top"
-                    android:background="@color/button_background"
-                    android:fontFamily="@font/algerian"
-                    android:onClick="addOneQuaffleForGriffindors"
-                    android:text="@string/quaffle"
-                    android:textColor="@color/button_text_color" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/algerian"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/house_text_padding"
+                        android:text="@string/slytherin_house"
+                        android:textSize="@dimen/house_text_size" />
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/second_button_margin_left"
-                    android:layout_marginRight="@dimen/second_button_margin_right"
-                    android:background="@color/button_background"
-                    android:fontFamily="@font/algerian"
-                    android:onClick="addOneHundredPointsGriffindors"
-                    android:text="@string/golden_snitch" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:padding="@dimen/house_logo"
+                        android:src="@drawable/slytherinteam" />
+
+                    <TextView
+                        android:id="@+id/slytherinhouse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="@dimen/score_padding_bottom"
+                        android:text="@string/initial_score"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/score_text_size" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/button_margin_bottom"
+                        android:layout_marginLeft="@dimen/button_margin_left"
+                        android:layout_marginRight="@dimen/button_margin_right"
+                        android:layout_marginTop="@dimen/button_margin_top"
+                        android:background="@color/button_background"
+                        android:fontFamily="@font/algerian"
+                        android:onClick="addOneQuaffleForSlytherins"
+                        android:text="@string/quaffle"
+                        android:textColor="@color/button_text_color" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/second_button_margin_left"
+                        android:layout_marginRight="@dimen/second_button_margin_right"
+                        android:background="@color/button_background"
+                        android:fontFamily="@font/algerian"
+                        android:onClick="addOneHundredPointsToSlyttherins"
+                        android:text="@string/golden_snitch" />
+                </LinearLayout>
             </LinearLayout>
 
-            <ImageView
+            <Button
                 android:layout_width="wrap_content"
-                android:layout_height="@dimen/imageview_height"
-                android:layout_marginTop="@dimen/imageview_margin_top"
-                android:src="@drawable/dividinglinewand" />
-
-            <LinearLayout
-                android:layout_width="@dimen/nowidth"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/reset_margin_top"
+                android:background="@color/button_background"
+                android:fontFamily="@font/algerian"
+                android:onClick="reset"
+                android:padding="@dimen/reset_button_padding"
+                android:text="Obliviate Score" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/algerian"
-                    android:gravity="center_horizontal"
-                    android:padding="@dimen/house_text_padding"
-                    android:text="@string/slytherin_house"
-                    android:textSize="@dimen/house_text_size" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:padding="@dimen/house_logo"
-                    android:src="@drawable/slytherinteam" />
-
-                <TextView
-                    android:id="@+id/slytherinhouse"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:paddingBottom="@dimen/score_padding_bottom"
-                    android:text="@string/initial_score"
-                    android:textColor="@color/text_color_black"
-                    android:textSize="@dimen/score_text_size" />
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/button_margin_bottom"
-                    android:layout_marginLeft="@dimen/button_margin_left"
-                    android:layout_marginRight="@dimen/button_margin_right"
-                    android:layout_marginTop="@dimen/button_margin_top"
-                    android:background="@color/button_background"
-                    android:fontFamily="@font/algerian"
-                    android:onClick="addOneQuaffleForSlytherins"
-                    android:text="@string/quaffle"
-                    android:textColor="@color/button_text_color" />
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/second_button_margin_left"
-                    android:layout_marginRight="@dimen/second_button_margin_right"
-                    android:background="@color/button_background"
-                    android:fontFamily="@font/algerian"
-                    android:onClick="addOneHundredPointsToSlyttherins"
-                    android:text="@string/golden_snitch" />
-            </LinearLayout>
         </LinearLayout>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="30dp"
-            android:background="#c8b594"
-            android:gravity="center"
-            android:onClick="reset"
-            android:padding="10dp"
-            android:text="Obliviate Score" />
 
     </RelativeLayout>
+
 
 </ScrollView>
