@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
      * Add one Quaffle for team Griffindor House
      */
     public void addOneQuaffleForGriffindors(View v) {
-        griffindorHouse = griffindorHouse + 1;
+        griffindorHouse = griffindorHouse + 10;
         displayForGriffindors(griffindorHouse);
     }
 
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
      */
 
     public void addOneQuaffleForSlytherins(View v) {
-        slytherinHouse = slytherinHouse + 1;
+        slytherinHouse = slytherinHouse + 10;
         displayForSlytherins(slytherinHouse);
     }
 

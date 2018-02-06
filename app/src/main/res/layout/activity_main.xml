@@ -86,6 +86,7 @@
                         android:fontFamily="@font/algerian"
                         android:onClick="addOneHundredPointsGriffindors"
                         android:text="@string/golden_snitch" />
+
                 </LinearLayout>
 
                 <ImageView
@@ -164,8 +165,6 @@
 
         </LinearLayout>
 
-
     </RelativeLayout>
-
 
 </ScrollView>
